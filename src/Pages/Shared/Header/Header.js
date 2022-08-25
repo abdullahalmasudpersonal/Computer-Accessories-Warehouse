@@ -33,7 +33,10 @@ const Header = () => {
                                 <Link to='/my-item' style={{textDecoration:'none'}}><a class="nav-link active fw-bold" aria-current="page" href="#">My Item</a></Link>
                             </li>
                             <li class="nav-item">
-                                <Link to='/' style={{textDecoration:'none'}}><a class="nav-link active fw-bold" aria-current="page" href="#">Register</a></Link>
+                                <Link to='/register' style={{textDecoration:'none'}}><a class="nav-link active fw-bold" aria-current="page" href="#">Register</a></Link>
+                            </li>
+                            <li class="nav-item">
+                                <Link to='/login' style={{textDecoration:'none'}}><a class="nav-link active fw-bold" aria-current="page" href="#">Login</a></Link>
                             </li>
                         </ul>
                        </div>
