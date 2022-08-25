@@ -24,13 +24,13 @@ const Header = () => {
                        <div className='d-flex'>
                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <Link to='/' style={{textDecoration:'none'}}><a class="nav-link active fw-bold" aria-current="page" href="#">Add Item</a></Link>
+                                <Link to='/add-item' style={{textDecoration:'none'}}><a class="nav-link active fw-bold" aria-current="page" href="#">Add Item</a></Link>
                             </li>
                             <li class="nav-item">
-                                <Link to='/' style={{textDecoration:'none'}}><a class="nav-link active fw-bold" aria-current="page" href="#">Manage Item</a></Link>
+                                <Link to='/manage-item' style={{textDecoration:'none'}}><a class="nav-link active fw-bold" aria-current="page" href="#">Manage Item</a></Link>
                             </li>
                             <li class="nav-item">
-                                <Link to='/' style={{textDecoration:'none'}}><a class="nav-link active fw-bold" aria-current="page" href="#">My Item</a></Link>
+                                <Link to='/my-item' style={{textDecoration:'none'}}><a class="nav-link active fw-bold" aria-current="page" href="#">My Item</a></Link>
                             </li>
                             <li class="nav-item">
                                 <Link to='/' style={{textDecoration:'none'}}><a class="nav-link active fw-bold" aria-current="page" href="#">Register</a></Link>
