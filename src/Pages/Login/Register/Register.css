@@ -1,11 +1,67 @@
 .register-bg {
     height: 800px;
-    background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGNvbG9yJTIwZ3JhZGllbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* -webkit-filter: blur(59px);
-    filter: blur(59px); */
-    filter: blur(40px);
-    overflow:hidden;
+    padding-top: 120px;
+    background-color: #f3fcff;
+}
+
+.register-dev {
+    height: 550px;
+    width: 300px;
+    margin: auto ;
+    background-color: #f2fbfc;
+    border-radius: 4px;
+    box-shadow: rgba(18, 14, 37, 0.555) 0px 2px 4px 0px, rgba(18, 11, 77, 0.692) 0px 2px 16px 0px;
+}
+
+.register-logo {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-dev h3 {
+    color: #a50e03;
+}
+
+.form-dev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-dev input:not([type=checkbox]) {
+    margin: 8px 0;
+    height: 40px;
+    width: 240px;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    color: rgb(71, 59, 59);
+    background-color: #cde1e9;
+    border: none; 
+    transition: .3s;
+}
+
+.submit-btn:hover {
+    background-color: rgb(180, 200, 218);
+}
+
+.or-ben {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.or-ben hr {
+    width: 35%;
+    border: 1px solid rgb(14, 4, 0);
+    color: rgb(31, 7, 0);
+    margin: auto 5px;
+}
+.alrady-have-account{
+    color: #00a0fd;
+}
+.please-login-text-color{
+    color: #000f9b;
 }

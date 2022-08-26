@@ -1,0 +1,62 @@
+.login-bg{
+    height: 800px;
+    padding-top: 120px;
+    background-color: #f3fcff;
+}
+.login-dev{
+    height: 550px;
+    width: 300px;
+    margin: auto;
+    background-color: #f2fbfc;
+    border-radius: 4px;
+    box-shadow: rgba(18, 14, 37, 0.555) 0px 2px 4px 0px, rgba(18, 11, 77, 0.692) 0px 2px 16px 0px;
+    
+}
+.login-logo{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-dev h3{
+    color: #a50e03;
+}
+.form-dev{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.forget-btn span{
+    color: #421402ad;
+}
+.forget-btn span:hover{
+    cursor: pointer;
+    color: red;
+    transition: .3s;
+}
+.submit{
+    color: rgb(71, 59, 59);
+    background-color: #cde1e9;
+    border: none; 
+    transition: .3s;
+}
+.submit:hover{
+    background-color: rgb(180, 200, 218);
+}
+.or{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.or hr{
+    width: 35%;
+    border: 1px solid rgb(14, 4, 0);
+    color: rgb(31, 7, 0);
+    margin: auto 5px;
+}
+.new-to-site{
+    color: #00a0fd;
+}
+.please-register-text-color{
+    color: #000f9b;
+}

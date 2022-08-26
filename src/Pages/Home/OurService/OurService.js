@@ -6,12 +6,12 @@ import './OurService.css';
 
 const OurService = () => {
     return (
-        <div>
-            <hr className='w-50 hr-service mx-auto mt-5 ' />
+        <div className='ourservice-bg pt-5'>
+            <hr className='w-50 hr-service mx-auto' />
             <h3 className='text-center fw-bold service-h3'>Our Service</h3>
             <hr className='w-50 hr-service mx-auto mb-5' />
-            <div className='container mb-3'>
-                <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div className='container'>
+                <div class="row row-cols-1 row-cols-md-3 g-4 pb-5">
                     <div class="col">
                         <div class="card h-100 border-0">
                             <img src={img1} class="card-img-top" alt="..." />

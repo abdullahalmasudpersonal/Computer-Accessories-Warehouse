@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <div className=''>
-            <nav class="navbar navbar-expand-lg bg-light">
+        <div>
+            <nav  class="navbar navbar-expand-lg header-bg">
                 <div class="container">
                     <Link to='/'><a class="navbar-brand"> <img src={logo} width='50px' height='40px' alt='' /></a></Link>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,6 +19,12 @@ const Header = () => {
                             </li>
                             <li class="nav-item">
                                 <Link to='/blogs' style={{textDecoration:'none'}}><a class="nav-link active fw-bold" aria-current="page" href="#">Blogs</a></Link>
+                            </li>
+                            <li class="nav-item">
+                                <Link to='/blogs' style={{textDecoration:'none'}}><a class="nav-link active fw-bold" aria-current="page" href="#">Connect Us</a></Link>
+                            </li>
+                            <li class="nav-item">
+                                <Link to='/blogs' style={{textDecoration:'none'}}><a class="nav-link active fw-bold" aria-current="page" href="#">About</a></Link>
                             </li>
                         </ul>
                        <div className='d-flex'>

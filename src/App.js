@@ -5,8 +5,8 @@ import AddItem from './Pages/AddItem/AddItem';
 import Blogs from './Pages/Blogs/Blogs';
 import Home from './Pages/Home/Home';
 import Inventories from './Pages/Inventories/Inventories';
-import LogIn from './Pages/Login/LogIn/LogIn';
 import Register from './Pages/Login/Register/Register';
+import Login from './Pages/Login/Login/Login';
 import ManageItem from './Pages/ManageItem/ManageItem';
 import MyItem from './Pages/MyItem/MyItem';
 import Footer from './Pages/Shared/Footer/Footer';
@@ -24,7 +24,7 @@ function App() {
         <Route path='/manage-item' element={<ManageItem />} />
         <Route path='/my-item' element={<MyItem />} />
         <Route path='/register' element={<Register />} />
-        <Route path='/login' element={<LogIn />} />
+        <Route path='/login' element={<Login />} />
       </Routes>
       <Footer />
     </div>

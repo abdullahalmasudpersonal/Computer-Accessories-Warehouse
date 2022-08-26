@@ -1,0 +1,8 @@
+
+.continue-with-google{
+    background: #cde1e9;
+    transition: .3s;
+}
+.continue-with-google:hover{
+    background-color: rgb(180, 200, 218);
+}
