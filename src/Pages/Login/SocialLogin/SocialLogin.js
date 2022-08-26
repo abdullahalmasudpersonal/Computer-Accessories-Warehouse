@@ -1,4 +1,3 @@
-import { hover } from '@testing-library/user-event/dist/hover';
 import React from 'react';
 import Google from '../../../img/SocialLogin/google-logo3.png';
 import './SocialLogin.css';
