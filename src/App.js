@@ -10,12 +10,12 @@ import Login from './Pages/Login/Login/Login';
 import ManageItem from './Pages/ManageItem/ManageItem';
 import MyItem from './Pages/MyItem/MyItem';
 import Footer from './Pages/Shared/Footer/Footer';
-import Header from './Pages/Shared/Header/Header';
+import Header2 from './Pages/Shared/Header2/Header';
 
 function App() {
   return (
     <div>
-      <Header />
+      <Header2/>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/inventories' element={<Inventories />} />
