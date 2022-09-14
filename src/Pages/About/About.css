@@ -1,9 +1,8 @@
-.blogs-bg{
+.about-bg {
     background-color: #f7fdff;
-    min-height: 750px;
 }
-.blogs{
-    min-height: 800px;
+.about {
+    min-height: 750px;
     display: flex;
     justify-content: center;
     align-items: center;

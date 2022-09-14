@@ -1,11 +1,13 @@
 import React from 'react';
 import './Blogs.css';
 
-
 const Blogs = () => {
     return (
         <div className='blogs-bg'>
-            <div class="accordion container py-5" id="accordionPanelsStayOpenExample">
+            <div className='blogs'>
+                <h6>Blogs Comming Soon ...</h6>
+            </div>
+            {/* <div class="accordion container py-5" id="accordionPanelsStayOpenExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="panelsStayOpen-headingOne">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
@@ -118,7 +120,7 @@ const Blogs = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
 
     );

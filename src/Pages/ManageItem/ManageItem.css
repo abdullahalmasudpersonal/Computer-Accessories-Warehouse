@@ -1,0 +1,20 @@
+.manageitem-bg{
+    background-color: #f7fdff;
+    min-height: 750px;
+}
+.manageinventories button{
+    border-radius: 5px;
+    border: none;
+    padding: 5px 7px;
+}
+.bg-delete{
+    border-radius: 5px;
+    border: none;
+    padding: 5px 7px;
+}
+.bg-delete{
+    background-color: bisque;
+}
+.bg-delete:hover{
+    background-color: rgb(255, 8, 0);
+}

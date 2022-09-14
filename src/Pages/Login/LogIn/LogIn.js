@@ -1,12 +1,65 @@
-import React/* , { useRef } */ from 'react';
-/* import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth'; */
-import { Link/* , useLocation, useNavigate */ } from 'react-router-dom';
-/* import auth from '../../../firebase.init'; */
+import React, { useRef } from 'react';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import auth from '../../../firebase.init';
 import logo from '../../../img/logo/computer-accessories-warehouse-removebg-preview.png';
+import Loading from '../../Shared/Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import './Login.css';
+import axios from 'axios';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import useToken from '../../../Hooks/UseToken';
 
 const Login = () => {
+    const emailRef = useRef('');
+    const passwrodRef = useRef('');
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    let from = location.state?.from?.pathname || '/';
+    let errorElement;
+
+    const [
+        signInWithEmailAndPassword,
+        user,
+        loading,
+        error,
+    ] = useSignInWithEmailAndPassword(auth);
+
+    const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
+    const [token] = useToken(user);
+    if (loading || sending) {
+        return <Loading />
+    }
+
+    if (token) {
+        navigate(from, { replace: true });
+    }
+
+    if (error) {
+        errorElement =
+            <p className='text-danger'>{error?.message} </p>
+    }
+
+    const handleSubmit = async event => {
+        event.preventDefault();
+        const email = emailRef.current.value;
+        const password = passwrodRef.current.value;
+
+        await signInWithEmailAndPassword(email, password);
+    }
+
+    const resetPassword = async () => {
+        const email = emailRef.current.value;
+        if (email) {
+            await sendPasswordResetEmail(email);
+            toast('send email');
+        }
+        else {
+            toast('Please enter your email address')
+        }
+    }
 
     return (
         <div className='login-bg'>
@@ -18,13 +71,14 @@ const Login = () => {
                     <h3 className='fw-bold text-center'>Login</h3>
 
                     <div className='form-dev'>
-                        <form>
-                            <input type='' placeholder='Email' name='' /> <br />
-                            <input type='' placeholder='Password' name='' /> <br />
-                            <p className='mb-0 forget-btn '><span>Froget password</span></p>
+                        <form onSubmit={handleSubmit}>
+                            <input type='email' ref={emailRef} placeholder='Email' name='' required /> <br />
+                            <input type='password' ref={passwrodRef} placeholder='Password' name='' required /> <br />
+                            <p className='mb-0 forget-btn '><span onClick={resetPassword} >Froget password</span></p>
                             <input className='fw-bold submit' type='submit' name='' value='login' />
                         </form>
                     </div>
+                    <p className='text-center'>{errorElement}</p>
                     <div className='or'>
                         <hr className='' /><span>OR</span><hr />
                     </div>
